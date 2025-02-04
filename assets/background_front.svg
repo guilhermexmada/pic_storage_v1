@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1">
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m0,622l480,6l480,56l480,22l480,-56l0,431l-480,0l-480,0l-480,0l-480,0l0,-459z" fill="#888277" id="svg_2"/>
+  <path d="m0,753l480,-61l480,97l480,-64l480,52l0,304l-480,0l-480,0l-480,0l-480,0l0,-328z" fill="#99957e" id="svg_3"/>
+  <path d="m0,837l480,12l480,-33l480,-4l480,12l0,257l-480,0l-480,0l-480,0l-480,0l0,-244z" fill="#a4a986" id="svg_4"/>
+  <path d="m0,857l480,23l480,-4l480,-29l480,-14l0,248l-480,0l-480,0l-480,0l-480,0l0,-224z" fill="#a9bf93" id="svg_5"/>
+  <path d="m0,944l480,4l480,22l480,0l480,-10l0,121l-480,0l-480,0l-480,0l-480,0l0,-137z" fill="#a8d6a5" id="svg_6"/>
+  <path d="m0,972l480,36l480,-25l480,0l480,10l0,88l-480,0l-480,0l-480,0l-480,0l0,-109z" fill="#a1eebd" id="svg_7"/>
+ </g>
+</svg>

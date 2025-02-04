@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Nighty';
+    src: url(../assets/nighty/Nightydemo.otf);
+}
+
+@font-face{
+    font-family: 'Work Sans';
+    src: url(../assets/Work_Sans/static/WorkSans-Bold.ttf);
+}
+
+body {
+    background-image: url(../assets/background_back.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    height: auto;
+    min-height: 900px;
+    backdrop-filter: blur(1px);
+
+}
+
+.container {
+    width: 100%;
+    min-height: 900px;
+    height: auto;
+    background-image: url(../assets/background_front.svg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.window-form {
+    width: 30%;
+    height: auto;
+    min-height: 450px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fbfbfb;
+    margin-top: 50px;
+    background: #fbfbfb;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.window-form * {
+    margin: 20px 0 20px 0;
+}
+
+.window-form label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #27374D;
+}
+
+.window-form input {
+    width: 20%;
+    height: 20px;
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    color: #27374D;
+    transition: all 0.2s ease;
+}
+
+.window-form input:hover {
+    width: 60%;
+}
+
+.window-form button {
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    background-color: #fbfbfb;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.window-form button:hover {
+    color: white;
+    background-color: #38bdf8;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/*==============================================================================================*/
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: #fbfbfb;*/
+}
+nav *{
+    margin: 10px;
+}
+
+nav p{
+    width: auto;
+    min-width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px 10px 0 10px;
+    background-color: #38bdf8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FBFBFB;
+    font-size: 20px;
+    text-align: center;
+    user-select: none;
+}
+
+nav button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    color: #38bdf8;
+    background-color: #FBFBFB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.2s ease;
+}
+
+nav button:hover {
+    width: 210px;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/*
+nav .openForm:hover {
+    animation-name: colorido;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorido {
+    0% {
+        color: #38bdf8;
+    }
+
+    20% {
+        color: #9CFF2E;
+    }
+
+    30% {
+        color: #FDFF00;
+    }
+
+    40% {
+        color: #FFB84C;
+    }
+
+    50% {
+        color: #F266AB;
+    }
+
+    60% {
+        color: #A459D1;
+    }
+
+    70% {
+        color: #711DB0;
+    }
+
+    80% {
+        color: #185ADB;
+    }
+
+    90% {
+        color: #2CD3E1;
+    }
+}
+    */
+
+nav .import ion-icon {
+    font-size: 20px;
+}
+
+nav .import:hover {
+    animation-name: subindo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes subindo {
+    0% {}
+}
+
+nav .btn-search {
+    width: 100px;
+    background-color: #fcd34d;
+    transition: all 0.2s ease;
+}
+
+nav .btn-search:hover {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+nav .btn-search ion-icon {
+    color: white;
+    font-size: 30px;
+    transition: all 0.2s ease;
+}
+
+nav .btn-search ion-icon:hover {
+    color: white;
+    font-size: 50px;
+}
+
+nav .search-bar {
+    width: 450px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+nav .search-bar::-webkit-search-cancel-button{
+    visibility: hidden;
+}
+
+.description{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #fbfbfb;
+    text-shadow: 2px 2px 2px black;
+}
+
+main {
+    width: 90%;
+    height: auto;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.upload-form {
+    width: 40%;
+    height: 600px;
+    /*background: #2980B9;
+    background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);*/
+    background-color: #FBFBFB;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: fixed;
+    z-index: 1;
+    margin-top: 100px;
+    border: none;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes aparecer {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.upload-form label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #27374D;
+}
+
+.upload-form input[type="text"]{
+    border-radius: 0px;
+}
+
+.upload-form input {
+    width: 20%;
+    height: 40px;
+    border-radius: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    color: #27374D;
+    transition: all 0.2s ease;
+}
+
+.upload-form input:hover {
+    width: 60%;
+}
+
+.upload-form input[type="file"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: none;
+}
+
+.upload-form input[type="file"]::-webkit-file-upload-button{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.upload-form input[type="file"]:hover::-webkit-file-upload-button{
+    width: 60%;
+}
+
+.upload-form input[type="color"]{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.upload-form select{
+    width: 20%;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+
+.upload-form button {
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    background-color: #fbfbfb;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.upload-form button ion-icon {
+    font-size: 30px;
+}
+
+.upload-form button:hover {
+    color: white;
+    background-color: #38bdf8;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.form-header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-header button {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: -50px;
+}
+
+.original-pic {
+    max-width: 90%;
+    margin: 50px;
+    border: 1px solid black;
+}
+
+.nav-form {
+    width: 600px;
+    height: 100px;
+    /*background-color: #4ade80;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
